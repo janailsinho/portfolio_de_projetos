@@ -11,9 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Customizações para o Tema Escuro, Textos Brancos e Sem Linhas */
-			body, input, select, textarea {
+			/* Forçando texto totalmente branco e visível em todos os elementos */
+			body, input, select, textarea, p, li, span, label, a, h1, h2, h3, h4, h5, h6, strong, b, .content p, section p {
 				color: #ffffff !important;
+				opacity: 1 !important;
 			}
 			body {
 				background-color: #1e1e24 !important;
@@ -27,13 +28,6 @@
 			#sidebar {
 				background-color: #16161a !important;
 			}
-			header.main h1, header.major h2, h3, h4, h5, h6, strong, b {
-				color: #ffffff !important;
-			}
-			/* Forçando texto branco puro e legível */
-			p, li, span, label, a {
-				color: #ffffff !important; 
-			}
 			.box {
 				border-color: #2e2e38 !important;
 			}
@@ -42,10 +36,13 @@
 				border-color: #444455 !important;
 				color: #ffffff !important;
 			}
+			/* Removendo todas as linhas divisórias e bordas entre seções e projetos */
 			hr {
 				display: none !important;
 			}
-			/* Removendo as linhas/listras que separam os projetos e os contatos */
+			header.main:after, header.major:after {
+				display: none !important;
+			}
 			.features article, .posts article {
 				border-bottom: none !important;
 				border-top: none !important;
