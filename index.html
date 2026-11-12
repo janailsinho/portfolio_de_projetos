@@ -36,30 +36,26 @@
 				border-color: #444455 !important;
 				color: #ffffff !important;
 			}
-			/* Removendo todas as linhas divisórias e bordas entre seções e projetos */
+			
+			/* REMOÇÃO TOTAL DE QUALQUER LINHA, BORDA OU DIVISOR */
 			hr {
 				display: none !important;
 			}
-			header.main:after, header.major:after {
+			header.main:after, header.major:after, section:after {
 				display: none !important;
 			}
-			/* Removendo as linhas verticais e horizontais que dividem os posts/projetos */
-			.posts {
-				border-top: none !important;
-				box-shadow: none !important;
-			}
-			.posts article {
+			.posts, .posts > *, .posts article, .posts article > *, .features article {
 				border: none !important;
 				box-shadow: none !important;
+				background-image: none !important;
 			}
-			.posts > article {
+			section > .posts {
 				border-top: none !important;
-				border-bottom: none !important;
-				border-left: none !important;
-				border-right: none !important;
 			}
-			.features article {
-				border: none !important;
+			/* Eliminando linhas geradas por pseudo-elementos nas seções de posts */
+			section.posts-section:before, .posts:before, .posts:after, article:before, article:after {
+				display: none !important;
+				background: none !important;
 			}
 			ul.contact > li {
 				border-top: none !important;
