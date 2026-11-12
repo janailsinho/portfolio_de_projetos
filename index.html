@@ -11,10 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Forçando texto totalmente branco e visível em todos os elementos */
-			body, input, select, textarea, p, li, span, label, a, h1, h2, h3, h4, h5, h6, strong, b, .content p, section p {
+			/* Customizações para o Tema Escuro, Textos Brancos e Sem Linhas */
+			body, input, select, textarea {
 				color: #ffffff !important;
-				opacity: 1 !important;
 			}
 			body {
 				background-color: #1e1e24 !important;
@@ -28,6 +27,13 @@
 			#sidebar {
 				background-color: #16161a !important;
 			}
+			header.main h1, header.major h2, h3, h4, h5, h6, strong, b {
+				color: #ffffff !important;
+			}
+			/* Forçando texto totalmente branco e visível em todos os elementos */
+			p, li, span, label, a {
+				color: #ffffff !important; 
+			}
 			.box {
 				border-color: #2e2e38 !important;
 			}
@@ -36,7 +42,7 @@
 				border-color: #444455 !important;
 				color: #ffffff !important;
 			}
-			/* Removendo todas as linhas divisórias e bordas entre seções e projetos */
+			/* Removendo todas as linhas divisórias, bordas e divisores entre seções e projetos */
 			hr {
 				display: none !important;
 			}
@@ -44,9 +50,17 @@
 				display: none !important;
 			}
 			.features article, .posts article {
-				border-bottom: none !important;
+				border: none !important;
+				box-shadow: none !important;
+			}
+			.posts {
+				border: none !important;
+			}
+			.posts > article {
 				border-top: none !important;
-				padding-bottom: 2em !important;
+				border-bottom: none !important;
+				border-left: none !important;
+				border-right: none !important;
 			}
 			ul.contact > li {
 				border-top: none !important;
