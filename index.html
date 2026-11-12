@@ -43,10 +43,23 @@
 			header.main:after, header.major:after {
 				display: none !important;
 			}
-			.features article, .posts article {
-				border-bottom: none !important;
+			/* Removendo as linhas verticais e horizontais que dividem os posts/projetos */
+			.posts {
 				border-top: none !important;
-				padding-bottom: 2em !important;
+				box-shadow: none !important;
+			}
+			.posts article {
+				border: none !important;
+				box-shadow: none !important;
+			}
+			.posts > article {
+				border-top: none !important;
+				border-bottom: none !important;
+				border-left: none !important;
+				border-right: none !important;
+			}
+			.features article {
+				border: none !important;
 			}
 			ul.contact > li {
 				border-top: none !important;
