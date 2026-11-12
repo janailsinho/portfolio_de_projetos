@@ -11,9 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Customizações para o Tema Escuro e Visibilidade de Texto */
+			/* Customizações para o Tema Escuro, Textos Claros e Remoção de Linhas */
 			body, input, select, textarea {
-				color: #e2e2e2 !important;
+				color: #ffffff !important;
 			}
 			body {
 				background-color: #1e1e24 !important;
@@ -30,8 +30,9 @@
 			header.main h1, header.major h2, h3, h4, h5, h6, strong, b {
 				color: #ffffff !important;
 			}
-			p, li, span, label {
-				color: #dcdce6 !important; /* Texto mais claro para melhor legibilidade */
+			/* Textos bem visíveis */
+			p, li, span, label, a {
+				color: #f1f1f5 !important; 
 			}
 			.box {
 				border-color: #2e2e38 !important;
@@ -42,10 +43,18 @@
 				color: #ffffff !important;
 			}
 			hr {
-				border-color: #2e2e38 !important;
+				display: none !important;
 			}
+			/* Removendo as linhas/listras que separam os projetos e os contatos */
 			.features article, .posts article {
-				border-bottom-color: #2e2e38 !important;
+				border-bottom: none !important;
+				border-top: none !important;
+				padding-bottom: 2em !important;
+			}
+			ul.contact > li {
+				border-top: none !important;
+				padding-top: 0.5em !important;
+				margin-top: 0.5em !important;
 			}
 		</style>
 	</head>
